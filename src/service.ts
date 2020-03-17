@@ -41,11 +41,11 @@ export class ServiceFactoryService {
   }
 
   get datasets() {
-    return this.mapiService(Datasets);
+    return this.mapiService(Datasets) as DatasetsService;
   }
 
   get directions() {
-    return this.mapiService(Directions);
+    return this.mapiService(Directions) as DirectionsService;
   }
 
   get geocoding() {
